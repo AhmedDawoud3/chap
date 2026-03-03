@@ -1,0 +1,19 @@
+name chap
+bin chap
+about "Add chapters to MP4 and MKV videos — no re-encoding, no quality loss."
+
+arg <input_video> help="Path to the source MP4 or MKV file"
+
+arg "[CHAPTERS]…" help="Inline chapter definitions, e.g. \"00:00 Intro\" \"01:30 Main Content\"" required=#false var=#true
+
+flag "-f --file" help="Read chapters from a .txt file (one 'TIMESTAMP Title' per line)" {
+    arg <FILE>
+}
+
+flag "-o --output" help="Output file path/name (default: <name>_chap.<ext> in the same directory)" {
+    arg <PATH>
+}
+
+flag "-w --overwrite" help="Overwrite the input file in place (mutually exclusive with -o)"
+
+flag "-h --help" help="Print help"
