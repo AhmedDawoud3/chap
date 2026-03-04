@@ -14,7 +14,7 @@ Video chapters let viewers jump to specific sections directly from the player's 
 ## Install
 
 ```bash
-git clone https://github.com/yourname/chap
+git clone https://github.com/Os14you/chap
 cd chap
 sudo ./setup.sh
 ```
